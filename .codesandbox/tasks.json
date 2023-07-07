@@ -1,0 +1,37 @@
+/**
+ * This tasks.json file ONLY WORK on CodeSandbox.
+ * Use this tasks.json file on other IDE(s) like Visual Studio Code may not work.
+ */
+
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Setup pnpm",
+      "command": "SHELL=zsh pnpm setup"
+    },
+    {
+      "name": "Install dependencies",
+      "command": "rm node_modules -rf; pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "pnpm start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "test",
+      "command": "pnpm test",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": false
+    }
+  }
+}
