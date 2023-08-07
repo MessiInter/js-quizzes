@@ -1,6 +1,6 @@
 {
   "name": "js-quizzes",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A simple JavaScript quizzes program.",
   "main": "index.js",
   "type": "module",
@@ -15,12 +15,13 @@
   },
   "publishConfig": {
     "ignore": [
-      ".codesandbox/"
+      ".codesandbox/",
+      "jsconfig.json"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MessiInter/js-quiz.git"
+    "url": "https://github.com/MessiInter/js-quizzes.git"
   },
   "keywords": [
     "javascript",
@@ -34,9 +35,9 @@
   "author": "messiinter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MessiInter/js-quiz/issues"
+    "url": "https://github.com/MessiInter/js-quizzes/issues"
   },
-  "homepage": "https://github.com/MessiInter/js-quiz#readme",
+  "homepage": "https://github.com/MessiInter/js-quizzes#readme",
   "dependencies": {
     "@clack/prompts": "^0.6.3",
     "chalk": "^5.3.0"
