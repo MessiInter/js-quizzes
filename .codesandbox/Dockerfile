@@ -19,6 +19,7 @@ ENV PNPM_HOME=/root/.pnpm
 
 ENV PATH=/usr/local/bin:/workspace/node_modules/.bin:/root/.pnpm:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
+
 RUN pnpm config set store-dir /root/.pnpm/store --global
 
 ENV NODE_ENV=development
