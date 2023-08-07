@@ -15,7 +15,8 @@
   },
   "publishConfig": {
     "ignore": [
-      ".codesandbox/"
+      ".codesandbox/",
+      "jsconfig.json"
     ]
   },
   "repository": {
