@@ -24,7 +24,7 @@ $ pnpm add -g js-quizzes@latest # via pnpm
 
 ##
 # Requirements:
-Node.js: 14.8.0 or higher (can be latest version).
+Node.js: 16.0.0 or higher (can be latest version).
 
 Package manager: Any (recommend npm (must have npx), yarn and pnpm).
 

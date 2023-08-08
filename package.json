@@ -1,6 +1,6 @@
 {
   "name": "js-quizzes",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "A simple JavaScript quizzes program.",
   "main": "index.js",
   "type": "module",
@@ -32,7 +32,7 @@
     "quiz"
   ],
   "engines": {
-    "node": ">=14.8.0"
+    "node": ">=16.0.0"
   },
   "author": "messiinter",
   "license": "MIT",
