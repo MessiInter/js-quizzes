@@ -23,9 +23,9 @@ prompt.intro(chalk.bgYellow(chalk.black(' Welcome to JavaScript Quizzes! ')));
 await sleep(1000);
 
 const turtorial = `
-  I'm a process on your device.
-  If you get any question wrong I will be ${chalk.bgRed('killed')}.
-  So get all the questions right.
+I'm a process on your device.
+If you get any question wrong I will be ${chalk.bgRed('killed')}.
+So get all the questions right.
 `;
 
 prompt.note(turtorial, chalk.bgBlue(' HOW TO PLAY '))
