@@ -96,11 +96,7 @@ await prompt.group({
             ]
         });
 
-        if (answer.length === 2 && answer.includes('high-level') && answer.includes('non-blocking')) {
-            await handleAnswer();
-        } else {
-            await handleAnswer(false);
-        }
+        await handleAnswer(answer.length === 2 && answer.includes('high-level') && answer.includes('non-blocking'));
     },
 
     question3: async () => {
@@ -124,11 +120,7 @@ await prompt.group({
             ]
         });
 
-        if (answer.length === 2 && answer.includes('let') && answer.includes('var')) {
-            await handleAnswer();
-        } else {
-            await handleAnswer(false);
-        }
+        await handleAnswer(answer.length === 2 && answer.includes('let') && answer.includes('var'));
     },
 
     question4: async () => {
