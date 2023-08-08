@@ -19,10 +19,6 @@ $ npm install -g js-quizzes@latest # via npm
 ```
 
 ```bash
-$ yarn global add js-quizzes@latest # via yarn
-```
-
-```bash
 $ pnpm add -g js-quizzes@latest # via pnpm
 ```
 
@@ -50,10 +46,6 @@ $ npm install # install dependencies (via npm)
 ```
 
 ```bash
-$ yarn install # via yarn
-```
-
-```bash
 $ pnpm install # via pnpm (recommend)
 ```
 
@@ -63,12 +55,12 @@ $ npm link # link package to global (via npm)
 ```
 
 ```bash
-$ yarn link # via yarn
-```
-
-```bash
 $ pnpm link -g # via pnpm (recommend)
 ```
+
+##
+# Note:
+Not work when install using yarn (tested on both v1 and v2).
 
 ##
 # License:
