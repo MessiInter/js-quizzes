@@ -9,10 +9,6 @@ $ npx js-quizzes@latest # via npx
 ```
 
 ```bash
-$ yarn dlx js-quizzes@latest # via yarn (only on yarn v2)
-```
-
-```bash
 $ pnpm dlx js-quizzes@latest # via pnpm
 $ pnpx js-quizzes@latest # via pnpx (only work on some old versions of pnpm)
 ```
