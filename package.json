@@ -1,6 +1,6 @@
 {
   "name": "js-quizzes",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "description": "A simple JavaScript quizzes program.",
   "main": "index.js",
   "type": "module",
