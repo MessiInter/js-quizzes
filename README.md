@@ -37,6 +37,44 @@ Node.js: 14.8.0 or higher (can be latest version).
 Package manager: Any (recommend npm (must have npx), yarn and pnpm).
 
 ##
+# Manully install:
+
+Clone the repository:
+```bash
+git clone https://github.com/MessiInter/js-quizzes.git # clone the repo
+```
+
+```bash
+cd js-quizzes # change directory to js-quizzes
+```
+
+Install dependencies:
+```bash
+npm install # install dependencies (via npm)
+```
+
+```bash
+yarn install # via yarn
+```
+
+```bash
+pnpm install # via pnpm (recommend)
+```
+
+Link package:
+```bash
+npm link # link package to global (via npm)
+```
+
+```bash
+yarn link # via yarn
+```
+
+```bash
+pnpm link -g # via pnpm (recommend)
+```
+
+##
 # License:
 Program license: MIT.
 ##
