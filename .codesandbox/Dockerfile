@@ -13,6 +13,8 @@ RUN apt-get upgrade -y
 
 RUN npm install -g npm@latest
 
+RUN yarn global add yarn@latest
+
 RUN npm install -g pnpm@latest
 
 ENV PNPM_HOME=/root/.pnpm
