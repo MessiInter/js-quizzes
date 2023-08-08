@@ -28,11 +28,6 @@
       "command": "pnpm test",
       "runAtStart": false
     },
-    "publish-npmjs": {
-      "name": "publish-npmjs",
-      "command": "pnpm publish-npmjs",
-      "runAtStart": false
-    },
     "dev": {
       "name": "dev",
       "command": "pnpm dev",
