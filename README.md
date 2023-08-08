@@ -41,37 +41,37 @@ Package manager: Any (recommend npm (must have npx), yarn and pnpm).
 
 Clone the repository:
 ```bash
-git clone https://github.com/MessiInter/js-quizzes.git # clone the repo
+$ git clone https://github.com/MessiInter/js-quizzes.git # clone the repo
 ```
 
 ```bash
-cd js-quizzes # change directory to js-quizzes
+$ cd js-quizzes # change directory to js-quizzes
 ```
 
 Install dependencies:
 ```bash
-npm install # install dependencies (via npm)
+$ npm install # install dependencies (via npm)
 ```
 
 ```bash
-yarn install # via yarn
+$ yarn install # via yarn
 ```
 
 ```bash
-pnpm install # via pnpm (recommend)
+$ pnpm install # via pnpm (recommend)
 ```
 
 Link package:
 ```bash
-npm link # link package to global (via npm)
+$ npm link # link package to global (via npm)
 ```
 
 ```bash
-yarn link # via yarn
+$ yarn link # via yarn
 ```
 
 ```bash
-pnpm link -g # via pnpm (recommend)
+$ pnpm link -g # via pnpm (recommend)
 ```
 
 ##
