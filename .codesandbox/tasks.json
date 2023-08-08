@@ -23,9 +23,14 @@
       "command": "pnpm start",
       "runAtStart": true
     },
-    "build": {
+    "test": {
       "name": "test",
       "command": "pnpm test",
+      "runAtStart": false
+    },
+    "publish-npmjs": {
+      "name": "publish-npmjs",
+      "command": "pnpm publish-npmjs",
       "runAtStart": false
     },
     "dev": {
