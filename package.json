@@ -12,6 +12,7 @@
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish-npmjs": "pnpm publish --no-git-checks || npm publish",
+    "preinstall": "npx --yes only-allow@latest npm && npx --yes only-allow@latest pnpm",
     "prepack": "npmignore --auto",
     "dev": "nodemon ."
   },
