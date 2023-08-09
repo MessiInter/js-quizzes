@@ -27,4 +27,4 @@ RUN pnpm config set git-checks false --global
 
 RUN pnpm config set store-dir /root/.pnpm-store --global
 
-ENV NODE_ENV=production
+ENV NODE_ENV=development
