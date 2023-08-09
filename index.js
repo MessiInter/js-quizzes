@@ -5,14 +5,17 @@ import * as prompt from '@clack/prompts';
 import boxen from 'boxen';
 import chalk from 'chalk';
 
+import calculateStatus from './utils/calculateStatus.js';
+
 let playerName;
 let solved = 0;
+let status;
 
 async function handleAnswer(isCorrect = true) {
     const spinner = prompt.spinner();
 
     spinner.start('Checking answer');
-    await sleep(2000);
+    await sleep(1000);
 
     if (isCorrect) {
         spinner.stop(chalk.bgGreen(`Nice work ${playerName}! That's a legit answer!`));
@@ -23,7 +26,8 @@ async function handleAnswer(isCorrect = true) {
         prompt.outro(chalk.bgRed(`Try again ${playerName}! Better luck next time!\n`));
 
         await sleep(1000);
-        console.log(`${boxen(chalk.bgBlue(chalk.white(`${solved}/5 questions solved.`)), {
+        status = calculateStatus(solved);
+        console.log(`${boxen(chalk.bgBlue(chalk.white(`${solved}/5 questions solved ` + `(${status}).`)), {
             padding: 1,
             borderColor: 'gray'
         })}\n`);
@@ -37,7 +41,7 @@ console.clear();
 await sleep(1000);
 
 prompt.intro(`${chalk.bgYellow(chalk.black(' Welcome to JavaScript Quizzes! '))}\n`);
-await sleep(2000);
+await sleep(1000);
 
 const turtorial = chalk.white(`
   I'm a process on your device.
@@ -194,7 +198,8 @@ await sleep(1000);
 prompt.outro(chalk.bgGreen(`Congrats ${playerName}! You're a winner!`));
 
 await sleep(1000);
-console.log(`${boxen(chalk.bgBlue(chalk.white(`${solved}/5 questions solved!`)), {
+status = calculateStatus(solved);
+console.log(`${boxen(chalk.bgBlue(chalk.white(`${solved}/5 questions solved ` + `(${status})!`)), {
     padding: 1,
     borderColor: 'gray'
 })}\n`);
