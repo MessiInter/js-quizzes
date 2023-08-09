@@ -5,6 +5,7 @@ import * as prompt from '@clack/prompts';
 import boxen from 'boxen';
 import chalk from 'chalk';
 
+import createBox from './utils/createBox.js';
 import calculateStatus from './utils/calculateStatus.js';
 
 let playerName;
@@ -19,6 +20,7 @@ async function handleAnswer(isCorrect = true) {
 
     if (isCorrect) {
         spinner.stop(chalk.bgGreen(`Nice work ${playerName}! That's a legit answer!`));
+        solved++;
     } else {
         spinner.stop(chalk.bgRed(`Game over! You lose ${playerName}.`));
 
@@ -27,10 +29,8 @@ async function handleAnswer(isCorrect = true) {
 
         await sleep(1000);
         status = calculateStatus(solved);
-        console.log(`${boxen(chalk.bgBlue(chalk.white(`${solved}/5 questions solved ` + `(${status}).`)), {
-            padding: 1,
-            borderColor: 'gray'
-        })}\n`);
+        createBox(chalk.bgBlue(chalk.white(`${solved}/5 questions solved.`)));
+        createBox(chalk.white(status));
 
         await sleep(1000);
         throw `${chalk.bgRed('EINCORRECT')} Incorrect answer.\n`;
@@ -93,7 +93,6 @@ await prompt.group({
             ]
         });
 
-        answer === 1995 && solved++;
         await handleAnswer(answer === 1995);
     },
 
@@ -123,7 +122,6 @@ await prompt.group({
             ]
         });
 
-        answer.length === 2 && answer.includes('high-level') && answer.includes('non-blocking') && solved++;
         await handleAnswer(answer.length === 2 && answer.includes('high-level') && answer.includes('non-blocking'));
     },
 
@@ -148,7 +146,6 @@ await prompt.group({
             ]
         });
 
-        answer.length === 2 && answer.includes('let') && answer.includes('var') && solved++
         await handleAnswer(answer.length === 2 && answer.includes('let') && answer.includes('var'));
     },
 
@@ -157,7 +154,6 @@ await prompt.group({
             message: 'Question 4: Is JavaScript case-sensitive?',
         }); // yes = correct answer.
 
-        answer && solved++;
         await handleAnswer(answer);
     },
 
@@ -187,7 +183,6 @@ await prompt.group({
             ]
         });
 
-        answer === 'number' && solved++;
         await handleAnswer(answer === 'number');
     }
 }).catch(err => {
@@ -199,9 +194,7 @@ prompt.outro(chalk.bgGreen(`Congrats ${playerName}! You're a winner!`));
 
 await sleep(1000);
 status = calculateStatus(solved);
-console.log(`${boxen(chalk.bgBlue(chalk.white(`${solved}/5 questions solved ` + `(${status})!`)), {
-    padding: 1,
-    borderColor: 'gray'
-})}\n`);
+createBox(chalk.bgBlue(chalk.white(`${solved}/5 questions solved!`)));
+createBox(chalk.white(status));
 
 await sleep(1000);
