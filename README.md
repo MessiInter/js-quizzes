@@ -64,7 +64,7 @@ $ pnpm link -g # via pnpm (recommend)
 
 ##
 # Note:
-This project don't let you install with yarn.
+Not supported on yarn.
 
 ##
 # License:
