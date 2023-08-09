@@ -25,6 +25,6 @@ RUN npm config set engine-strict true
 
 RUN pnpm config set git-checks false --global
 
-RUN pnpm config set store-dir /root/.pnpm/store --global
+RUN pnpm config set store-dir /root/.pnpm-store --global
 
 ENV NODE_ENV=production
