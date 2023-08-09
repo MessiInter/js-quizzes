@@ -151,7 +151,6 @@ await prompt.group({
     question4: async () => {
         const answer = await prompt.confirm({
             message: 'Question 4: Is JavaScript case-sensitive?',
-            initialValue: false
         }); // yes = correct answer.
 
         answer && solved++;
