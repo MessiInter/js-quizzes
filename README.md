@@ -1,5 +1,9 @@
 # js-quizzes
-<a href="https://npmjs.com/package/js-quizzes?activeTab=versions" target="_blank"><img src="https://badgen.net/npm/v/js-quizzes"></a> <a href="https://npm.im/js-quizzes" target="_blank"><img src="https://badgen.net/npm/dm/js-quizzes"></a> <a href="https://packagephobia.now.sh/result?p=js-quizzes" target="_blank"><img src="https://packagephobia.now.sh/badge?p=js-quizzes"></a> <a href="https://npm.im/js-quizzes" target="_blank"><img src="https://badgen.net/static/license/MIT"></a> <a href="https://github.com/MessiInter/js-quizzes" target="_blank"><img src="https://badgen.net/static/github/repo?icon=github"></a>
+[![npm version](https://img.shields.io/npm/v/js-quizzes.svg)](https://npmjs.com/package/js-quizzes?activeTab=versions)
+[![npm license](https://img.shields.io/npm/l/js-quizzes.svg)](https://npm.im/js-quizzes)
+[![npm downloads](https://img.shields.io/npm/dm/js-quizzes.svg)](https://npm.im/js-quizzes)
+[![npm install size](https://packagephobia.now.sh/badge?p=js-quizzes)](https://packagephobia.now.sh/result?p=js-quizzes)
+[![github repo](https://badgen.net/static/github/repo?icon=github)](https://github.com/MessiInter/js-quizzes)
 
 A simple JavaScript quizzes program.
 
@@ -11,7 +15,6 @@ $ npx js-quizzes@latest # via npx
 
 ```bash
 $ pnpm dlx js-quizzes@latest # via pnpm
-$ pnpx js-quizzes@latest # via pnpx (only work on some old versions of pnpm)
 ```
 
 Install globally:
