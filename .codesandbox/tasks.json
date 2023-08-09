@@ -10,10 +10,11 @@
       "name": "Setup pnpm",
       "command": "SHELL=zsh pnpm setup"
     },
+
     {
       "name": "Install dependencies",
       "command": "rm node_modules -rf; pnpm install"
-    }
+    },
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
@@ -23,11 +24,13 @@
       "command": "pnpm start",
       "runAtStart": true
     },
+
     "test": {
       "name": "test",
       "command": "pnpm test",
       "runAtStart": false
     },
+
     "dev": {
       "name": "dev",
       "command": "pnpm dev",
