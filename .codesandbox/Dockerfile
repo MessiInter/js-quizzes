@@ -21,10 +21,4 @@ ENV PATH=/usr/local/bin:/workspace/node_modules/.bin:/root/.pnpm:/usr/local/sbin
 
 RUN npm config set auth-type legacy
 
-RUN npm config set engine-strict true
-
-RUN pnpm config set git-checks false
-
-RUN pnpm config set store-dir /root/.pnpm-store
-
 ENV NODE_ENV=development

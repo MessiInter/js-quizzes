@@ -7,13 +7,8 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "name": "Setup pnpm",
-      "command": "SHELL=zsh pnpm setup"
-    },
-
-    {
       "name": "Install dependencies",
-      "command": "rm node_modules -rf; pnpm install"
+      "command": "pnpm install"
     }
   ],
 
