@@ -16,7 +16,7 @@ async function handleAnswer(isCorrect = true) {
     const spinner = prompt.spinner();
 
     spinner.start('Checking answer');
-    await sleep(1000);
+    await sleep(1999);
 
     if (isCorrect) {
         spinner.stop(chalk.bgGreen(`Nice work ${playerName}! That's a legit answer!`));
@@ -30,6 +30,8 @@ async function handleAnswer(isCorrect = true) {
         await sleep(1000);
         status = calculateStatus(solved);
         createBox(chalk.bgBlue(chalk.white(`${solved}/5 questions solved.`)));
+
+        await sleep(1000)
         createBox(chalk.white(status));
 
         await sleep(1000);
@@ -68,7 +70,7 @@ await prompt.group({
 
     question1: async () => {
         const answer = await prompt.select({
-            message: 'Question 1: What year did JavaScript first appear?',
+            message: 'What year did JavaScript first appear?',
             initialValue: 1955,
             options: [
                 {
@@ -98,7 +100,7 @@ await prompt.group({
 
     question2: async () => {
         const answer = await prompt.multiselect({
-            message: 'Question 2: Complete the field bellow:\nJavaScript is a __________ language with a ____________ event loop.',
+            message: 'JavaScript is a __________ language with a ____________ event loop.',
             options: [
                 {
                     value: 'low-level',
@@ -127,7 +129,7 @@ await prompt.group({
 
     question3: async () => {
         const answer = await prompt.multiselect({
-            message: "Question 3: What's keywords that uses to declare a variable that can be reassign in JavaScript?",
+            message: "What's keywords that uses to declare a variable that can be reassign in JavaScript?",
             options: [
                 {
                     value: 'const',
@@ -151,7 +153,7 @@ await prompt.group({
 
     question4: async () => {
         const answer = await prompt.confirm({
-            message: 'Question 4: Is JavaScript case-sensitive?',
+            message: 'Is JavaScript case-sensitive?',
         }); // yes = correct answer.
 
         await handleAnswer(answer);
@@ -159,7 +161,7 @@ await prompt.group({
 
     question5: async () => {
         const answer = await prompt.select({
-            message: "Question 5: What's type of NaN (not a number) in JavaScript?",
+            message: "What's type of NaN (not a number) in JavaScript?",
             options: [
                 {
                     value: 'boolean',
@@ -195,6 +197,8 @@ prompt.outro(chalk.bgGreen(`Congrats ${playerName}! You're a winner!`));
 await sleep(1000);
 status = calculateStatus(solved);
 createBox(chalk.bgBlue(chalk.white(`${solved}/5 questions solved!`)));
+
+await sleep(1000);
 createBox(chalk.white(status));
 
 await sleep(1000);
